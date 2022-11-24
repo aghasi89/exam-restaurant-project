@@ -5,17 +5,14 @@ import Topbar from './Components/Topbar';
 import Main from './Components/Main';
 import Footer from './Components/Footer';
 
+
 function App() {
   return (
     <div className="App">
       <Topbar />
       {/* <Header /> */}
-      <Main />
-
-      
-     
-    </div>
-    
+      <Main />    
+    </div>    
   );
 }
 
