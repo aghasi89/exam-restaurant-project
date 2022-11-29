@@ -105,3 +105,34 @@ background-color: bisque;
   flex-direction: row;
   justify-content: space-around;
 }
+
+.menu-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border-style: solid;
+  border-color: #cda45e; */
+
+}
+
+.btn-ALL{
+  background-color: #cda45e;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 200px;
+}
+
+
+.menu-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 200px;
+}

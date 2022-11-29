@@ -6,13 +6,15 @@ import Main from './Components/Main';
 import Footer from './Components/Footer';
 
 
+
 function App() {
   return (
-    <div className="App">
-      <Topbar />
-      {/* <Header /> */}
-      <Main />    
-    </div>    
+    
+      <div className="App">
+        <Topbar />         
+        <Main />    
+      </div>    
+    
   );
 }
 
