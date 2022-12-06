@@ -122,17 +122,31 @@ background-color: bisque;
 
 .menu-item{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 200px;
+  flex-direction: row;
+  justify-content: space-around;  
+  align-items: center;
+  /* margin: 20px;
+  padding: 20px; */
+  /* width: 400px; */
+ 
 }
 
 
 .menu-content{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 200px;
+  width: 400px;
+  margin: 10px;  
+}
+
+.menu-item-img{  
+  width: 70px;
+  border-radius: 50%;
+  padding-right: 20px;   
+  float: left;
+  border: 5px solid rgba(255, 255, 255, 0.2); 
+  cursor: pointer; 
+ 
 }

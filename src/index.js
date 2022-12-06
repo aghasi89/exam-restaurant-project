@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MenuReducer from './Store/reducers';
+// import MenuReducer from './Store/reducers';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import store from './Store';
+import { LanguageContext } from './Contexts';
+import { useState } from 'react';
+import Languages from './Contexts/Languages';
+
 
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+
   <React.StrictMode>
-    
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <LanguageContext.Provider value ={ Languages }>
+      <Provider store = {store}>
+          <BrowserRouter>
+              <App />
+          </BrowserRouter>
+      </Provider>
+    </LanguageContext.Provider>
        
   </React.StrictMode>
 );

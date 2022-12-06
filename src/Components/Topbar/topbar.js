@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../Contexts";
 
-function Topbar(){
+function Topbar(props){
+
+    const language = useContext(LanguageContext);
+
     return (
         <div>
             <div className="topbar-container">
@@ -8,8 +13,8 @@ function Topbar(){
                     <div className="topbar-contact-info">Mon-Sat: 11AM - 23PM</div>  
                 </div>
                 <div className="topbar-language">
-                    <button>En</button>
-                    <button>RU</button>
+                    <button onClick={ () => {} } >En</button>
+                    <button onClick={ () => {} } >RU</button>
                 </div>
             </div>
         </div>

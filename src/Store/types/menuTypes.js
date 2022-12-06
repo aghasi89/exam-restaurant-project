@@ -1,0 +1,3 @@
+const MARK_STARTERS = ""
+const CHANGE_CATEGORY= "!@menuTypes/CHANGE_CATEGORY"
+export {CHANGE_CATEGORY}

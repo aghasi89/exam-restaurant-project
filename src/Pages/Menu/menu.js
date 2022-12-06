@@ -1,12 +1,26 @@
 import MenuItems from "../../Components/MenuItems";
-import {Provider}  from 'react-redux';
+import {Provider, useDispatch}  from 'react-redux';
 import ButtonMenu from "../../Components/Buttons/buttonMenu";
 import MenuContent from "../../Components/MenuContent";
+import {useSelector} from 'react-redux';
+import saladsSelector from "../../Store/selectors";
+import { changeCategoryAction } from "../../Store/actions/menuActions";
 
 
-function Menu(){
-    // const itemName = ['lobster Bisque', 'Bred Barrel' ]
 
+
+
+function Menu(){   
+
+    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
+    // const showSalads = useSelector(items => items.filter( (item) => item.category == "salads" ))
+   // const showSalads = useSelector(saladsSelector)
+    const callback = (category)=>{
+        return ()=>{
+            dispatch(changeCategoryAction(category))
+        }
+    }
     return(
         <section className="menu">
             <div className="menu-container">
@@ -16,10 +30,10 @@ function Menu(){
                 </div>
                 
                 <div className="menu-buttons">                    
-                    <ButtonMenu className="btn-ALL" title='All'/>
-                    <ButtonMenu title='Starters'/>
-                    <ButtonMenu title='Salads'/>
-                    <ButtonMenu title='Specialty'/>
+                    <ButtonMenu className="btn-ALL" title='All' onClick={callback("All")} />
+                    <ButtonMenu title='Starters'  onClick={callback("starters")}/>
+                    <ButtonMenu title='Salads' onClick={callback("salads")} />
+                    <ButtonMenu title='Specialty'  onClick={callback("specialty")}/>
                 </div>
                 <MenuContent />
             </div>
