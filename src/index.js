@@ -9,7 +9,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import store from './Store';
 import { LanguageContext } from './Contexts';
-import { useState } from 'react';
 import Languages from './Contexts/Languages';
 
 
@@ -18,16 +17,12 @@ import Languages from './Contexts/Languages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-
   <React.StrictMode>
-    <LanguageContext.Provider value ={ Languages }>
       <Provider store = {store}>
           <BrowserRouter>
               <App />
           </BrowserRouter>
       </Provider>
-    </LanguageContext.Provider>
        
   </React.StrictMode>
 );

@@ -1,22 +1,31 @@
+import { useContext } from "react";
 import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { LanguageContext } from "../../Contexts";
 import Topbar from "../Topbar";
 
 
 function Header(){
+    const t= useContext(LanguageContext)
     return(
+
+        // const headerItem = [
+        //     {home: Home, }
+        // ]
+
+
         <div className="header">
             <div className="header-container">
                 <h1>VENEZIA</h1>
                 <nav className="nav-menu">
                     <ul className="nav-ul">
                         <li className="li">
-                            <Link to="/">Home</Link>
+                            <Link to="/">{t.nav.home}</Link>
                         </li>
                         <li className="li">
-                            <Link to="/about">About</Link>
+                            <Link to="/about">{t.nav.about}</Link>
                         </li>
                         <li className="li">
-                            <Link to="/menu">Menu</Link>
+                            <Link to="/menu">{t.nav.menu}</Link>
                         </li>
                         <li className="li">
                             <Link to="/specials">Specials</Link>

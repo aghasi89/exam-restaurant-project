@@ -6,7 +6,6 @@ import MenuItems from "../MenuItems";
 
 
 function MenuContent(){
-    
 
     
     const items = useSelector(selectItems)
