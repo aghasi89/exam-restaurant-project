@@ -54,20 +54,83 @@ background-color: bisque;
 
 .li{
   margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .li-specials{
+  width: 70px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */
 
 .nav-menu{
   color: aliceblue;
 }
 
 .menu {
-  display: flex;
+  display: block;
   background-color: #1a1814;
   padding: 60px 0;
-  color: #fff;
-
-  
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;  
+  width: 1220px;
 }
+
+.menu-button{
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+
+}
+
+
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.menu-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  margin: 10px;  
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  align-items: center;
+  width: 380px;
+  /* margin: 20px;
+  padding: 20px; */
+  /* width: 400px; */
+ 
+}
+
+.menu-item-img{  
+  width: 70px;
+  border-radius: 50%;
+  padding-right: 20px;   
+  /* float: left; */
+  border: 5px solid rgba(255, 255, 255, 0.2); 
+  cursor: pointer; 
+ 
+}
+
+.img-button{
+  border-radius: 50%;
+  background-color: #cda45e;
+}
+
 
 .menu-h2{
   font-size: 14px;
@@ -82,12 +145,10 @@ background-color: bisque;
 }
 
 .menu-title{
-  display: flex;
-  
+ display: flex;  
  padding-bottom: 40px; 
  flex-direction: column;
  justify-content: flex-start;
-
  align-items: flex-start;}
 
 .p-menu{
@@ -120,33 +181,8 @@ background-color: bisque;
   background-color: #cda45e;
 }
 
-.menu-item{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;  
-  align-items: center;
-  /* margin: 20px;
-  padding: 20px; */
-  /* width: 400px; */
- 
-}
 
 
-.menu-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 400px;
-  margin: 10px;  
-}
 
-.menu-item-img{  
-  width: 70px;
-  border-radius: 50%;
-  padding-right: 20px;   
-  float: left;
-  border: 5px solid rgba(255, 255, 255, 0.2); 
-  cursor: pointer; 
- 
-}
+
+

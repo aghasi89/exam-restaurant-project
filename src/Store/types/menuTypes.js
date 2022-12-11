@@ -1,3 +1,7 @@
-const MARK_STARTERS = ""
+
 const CHANGE_CATEGORY= "!@menuTypes/CHANGE_CATEGORY"
-export {CHANGE_CATEGORY}
+const GET_DATAS = "@menuTypes/GET_DATAS"
+
+
+
+export {CHANGE_CATEGORY, GET_DATAS}

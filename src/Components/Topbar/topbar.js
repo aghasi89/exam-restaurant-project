@@ -3,8 +3,7 @@ import { LanguageContext } from "../../Contexts";
 import Languages from "../../Contexts/Languages";
 
 function Topbar(props){
-const {changeLanguage} =props
-    const language = useContext(LanguageContext);
+const {changeLanguage} = props
 
     return (
         <div>

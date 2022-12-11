@@ -1,10 +1,10 @@
 
 function MenuItems(props){
-    
+      
     return(
         <div className="menu-item">
-            <div >
-                <img className="menu-item-img" src={props.src}>{props.img}</img>
+            <div className="menu-item-img-box">                
+                <img className="menu-item-img" src={props.src}>{props.img}</img>                
             </div>
 
             <div className="menu-item-text">

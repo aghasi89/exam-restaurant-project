@@ -1,4 +1,6 @@
-import { CHANGE_CATEGORY } from "../types/menuTypes"
+import { CHANGE_CATEGORY, GET_DATAS } from "../types/menuTypes"
+
+
 
 const changeCategoryAction = (category)=>{
     return {
@@ -7,4 +9,12 @@ const changeCategoryAction = (category)=>{
     }
 }
 
-export {changeCategoryAction}
+
+const getDatasAction = (recipies) => {
+    return {
+        type: GET_DATAS,
+        payload: recipies,
+    }
+}
+
+export {changeCategoryAction, getDatasAction}

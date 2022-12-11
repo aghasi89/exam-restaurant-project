@@ -1,18 +1,12 @@
 import { useContext } from "react";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LanguageContext } from "../../Contexts";
-import Topbar from "../Topbar";
+
 
 
 function Header(){
     const t= useContext(LanguageContext)
-    return(
-
-        // const headerItem = [
-        //     {home: Home, }
-        // ]
-
-
+    return(        
         <div className="header">
             <div className="header-container">
                 <h1>VENEZIA</h1>
@@ -28,19 +22,19 @@ function Header(){
                             <Link to="/menu">{t.nav.menu}</Link>
                         </li>
                         <li className="li">
-                            <Link to="/specials">Specials</Link>
+                            <Link to="/specials">{t.nav.specials}</Link>
                         </li>
                         <li className="li">
-                            <Link to="/events">Events</Link>
+                            <Link to="/events">{t.nav.events}</Link>
                         </li>
                         <li className="li">
-                            <NavLink to="/chefs">Chefs</NavLink>
+                            <NavLink to="/chefs">{t.nav.chefs}</NavLink>
                         </li>
                         <li className="li">
-                            <NavLink to="/gallery">Gallery</NavLink>
+                            <NavLink to="/gallery">{t.nav.gallery}</NavLink>
                         </li>
                         <li className="li">
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact">{t.nav.contact}</Link>
                         </li>
                     </ul>
                 </nav>           

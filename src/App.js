@@ -12,17 +12,13 @@ import Languages from './Contexts/Languages';
 
 function App() {
   const [lng,setlng]= useState(Languages.en)
-
-
-  return (
+    return (
     <LanguageContext.Provider value ={ lng }>
-
       <div className="App">
         <Topbar changeLanguage = {setlng} />         
         <Main />    
       </div>    
-      </LanguageContext.Provider>
-    
+    </LanguageContext.Provider>    
   );
 }
 

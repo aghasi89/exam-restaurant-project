@@ -1,6 +1,4 @@
-
 import {Routes , Route } from 'react-router-dom';
-
 import Home from "../../Pages/Home";
 import About from "../../Pages/About";
 import Menu from "../../Pages/Menu";
@@ -23,8 +21,7 @@ function Main(){
                     <Route path="events" element={<Events />} />
                     <Route path="chefs" element={<Chefs />} />
                     <Route path="gallery" element={<Gallery />} />
-                    <Route path="contact" element={<Contact />} />
-                    {/* <Route path="*" element={<Notfound />} /> */}   
+                    <Route path="contact" element={<Contact />} />                      
                 </Route>                 
             </Routes>
             

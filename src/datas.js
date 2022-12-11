@@ -1,3 +1,4 @@
+
 const recipies = [
     { id: 1, category: "starters", img: 'https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg', itemName: 'Lobster Bisque', itemCost: '$5.95', ingredients: ' Lorem, deren, trataro, filede, nerada' },
     { id: 2, category: "starters", img: 'https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/cake.jpg', itemName: 'Crab Cake', itemCost: '$7.95', ingredients: 'A delicate crab cake served on a toasted roll with lettuce and tartar sauce' },
